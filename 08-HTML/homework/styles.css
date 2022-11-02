@@ -5,7 +5,9 @@ img {
     width: 400px;
 }
 div {
+    max-width: 600px;
     text-align: center;
+    margin: auto;
 }
 #thirdDiv {
     height: 600px;
