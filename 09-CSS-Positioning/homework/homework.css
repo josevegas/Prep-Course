@@ -52,3 +52,23 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 
 /* Ejercicio 6. */
+#ejercicioSiete{
+    display:flex;
+    align-items:space-around;
+    justify-content: space-around;
+}
+#elementoUno{
+    order:1;
+}
+#elementoDos{
+    align-self: center;
+    order:0;
+}
+#elementoTres{
+    align-self: flex-end;
+    order:1;
+}
+#elementoCuatro{
+    align-self: center;
+    order:2;
+}
