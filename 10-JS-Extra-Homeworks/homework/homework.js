@@ -77,6 +77,7 @@ function asAmirror(str) {
       aux="";
     }
   }
+  palabras.push(aux);
   for(i=0;i<palabras.length;i++){
     if(i==0){
       nif="";
@@ -84,7 +85,7 @@ function asAmirror(str) {
       nif=nif+" ";
     }
     aux=palabras[i];
-    for(j=(aux.length-1);j=0;j--){
+    for(j=(aux.length-1);j>=0;j--){
       nif=nif+aux[j];
     }
   }
@@ -97,6 +98,17 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var aux=numero;
+  var cap=0;
+  do{
+    cap=cap*10+(aux%10);
+    aux=(aux-(aux%10))/10;
+  }while(aux>0)
+  if(cap==numero){
+    return "Es capicua";
+  }else{
+    return "No es capicua";
+  }
 }
 
 
